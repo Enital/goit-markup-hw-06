@@ -45,46 +45,57 @@
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
-          <form class="modal-form">
+          <form class="modal-form" autocomplete="off">
             <h3 class="modal-title">
               Leave your contacts and we will call you back
-            </h3>
-            <!-- <div class="form-field"> -->
-              <label class="form-field">Name
+            </h3>           
+              
+            <label><p class="form-description">Name</p>
               <div class="modal-form-field">
                 <input class="modal-form-input" type="text" name="name" id="name" autofocus>
-              <svg class="modal-icon" width="12" height="12">
-                <use href="./images/banking-app.jpg#icon-user"></use>
+                <svg class="modal-icon" width="12" height="12">
+                  <use href="./images/icons.svg#icon-user"></use>
               </svg>
               </div>
-              </label>
-            <!-- </div> -->
+            </label>
           
-            <div class="form-field">
-            <label  class="" for="phone">Phone</label>
-            <input type="text" name="phone" id="phone">
-            </div>
-          
-            <div class="form-field">
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email">
-            </div>
-          
-            <div class="form-field">
-            <label for="comment">Comment</label>
-            <textarea name="comment" id="" cols="30" rows="10" placeholder="Text input"></textarea>
-            </div>
+            <label><p class="form-description">Phone</p>
+              <div class="modal-form-field">
+                <input class="modal-form-input" type="text" name="phone" id="phone">
+                <svg class="modal-icon" width="13" height="12">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </label>
+            
+            <label><p class="form-description">Email</p>
+              <div class="modal-form-field">
+                <input class="modal-form-input" type="text" name="email" id="email">
+                <svg class="modal-icon" width="15" height="12">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            </label>
 
+              <label><p class="form-description">Comment</p>
+              <textarea class="modal-form-comment" name="comment" id="" cols="30" rows="10" placeholder="Text input"></textarea>
+            </label>
+            
+            <!-- <input id="user-policy" type="checkbox" name="user-policy" 
+              class="modal-form-check visually-hidden" />
+            <label for="user-policy" class="modal-form-check-desc">
+              <span class="user-police">I accept the terms
+                and conditions of the&nbsp;<a class="privacy-policy" href="">Privacy Policy</a>
+              </span>
+            </label> -->
             <div class="form-field-checkbox">
             <input type="checkbox" name="checkbox" value="privacy" id="privacy">
-              <label for="privacy">I accept the terms and conditions of the
-              <span class="modal-privacy"> Privacy Policy</span>
+              <label class="modal-privacy-one">I accept the terms and conditions of the
+              <a class="modal-privacy" href=""> Privacy Policy</a>
                 </label>
             </div>
             <button type="submit" class="button-index">Send</button>
-          </form>
-          
-          
+          </form>                    
         </div>
       </div>      
       
@@ -525,7 +536,7 @@
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <svg width="24" heigh="24">
+                <svg width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
@@ -537,7 +548,7 @@
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <svg width="24" heigh="24">
+                <svg width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
@@ -549,7 +560,7 @@
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <svg width="24" heigh="24">
+                <svg width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
@@ -561,7 +572,7 @@
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <svg width="24" heigh="24">
+                <svg width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -572,8 +583,12 @@
           <label class="" for="subscribe">
             <p class="footer-title">Subscribe</p></label>
           <div class="footer-subscribe">
-            <input type="email" name="email" id="footer-email">
-          <input class="subscribe-button" type="submit">
+            <input class="footer-form-input" type="email" name="email" id="footer-email" placeholder="E-mail" autocomplete="off">
+          <button class="subscribe-button" type="submit">Subscribe
+          <svg width="24" height="24" class="footer-send-icon">
+            <use href="./images/icons.svg#icon-send"></use>
+          </svg>
+          </button>
           </div>
         </div>
       </div>
