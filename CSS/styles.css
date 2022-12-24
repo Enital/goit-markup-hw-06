@@ -71,9 +71,6 @@ body {
 .nav-link:hover {
   color: var(--prime-color);
 }
-/* .nav-link:visited {
-  color: var(--prime-color);
-} */
 .nav-link:active {
   color: var(--prime-color);
 }
@@ -211,26 +208,31 @@ body {
 .footer-social{
   margin-right: 80px;
 }
-.footer-subscribe{
-  display: flex;
-  flex-direction: column;
-}
+
 .footer-subscribe{
   position: relative;
   display: flex;
   flex-direction: row;
 }
+.footer-title-subscribe{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;  
+  color: var(--only-white);
+}
 .footer-subscribe input{
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  background-color: #2e2f42;
+  background-color: var(--dark-color);
   height: 40px;
   margin-right: 24px;
   width: 264px;
   border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+  margin-top: 16px;
 }
 .subscribe-button{
   position: relative;
@@ -241,7 +243,8 @@ body {
   color: var(--only-white);
   align-items: center;
   border: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 16px;
 }
 .subscribe-button:hover{
   background-color: var(--second-color)
@@ -251,7 +254,18 @@ input.subscribe-button{
   color: ffffff;
 }
 .footer-form-input{
-  padding-left: 16px;
+  outline: none;
+  color: var(--only-white);
+  margin-top: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding:8px 16px;
+}
+.footer-form-input::placeholder{
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
 }
 .footer-send-icon{
   position: absolute;
@@ -260,13 +274,25 @@ input.subscribe-button{
   right: 24px;
   transform: translateY(-50%);
 }
+
 /* Index.html */
+
 .title {
   font-size: 56px;
   line-height: 107%;
   color: var(--only-white);
   text-align: center;
-  padding-bottom: 48px;
+}
+.main-title{
+  width: 492px;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--only-white);
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 .section {
   padding: 120px 0px;
@@ -289,13 +315,11 @@ input.subscribe-button{
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.2);
 }
-
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 584px;
   width: 408px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #fcfcfc;
@@ -403,10 +427,14 @@ input.subscribe-button{
   width: 100%;
   height: 120px;
   resize: none;
-  padding: 8px;
+  padding: 4px;
+  /* padding-left: 16px; */
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-comment::placeholder{
+  padding: 4px 0 0 12px;
 }
 .modal-form-comment:focus {
   outline: none;
@@ -430,10 +458,8 @@ input.subscribe-button{
   letter-spacing: 0.04em;
   color: #757575;
   margin-bottom: 24px;
-} */
-.checkbox-modal{
-  margin-right: 8px;
-}
+} 
+
 .button-index {
   background-color: var(--prime-color);
   color: var(--only-white);
@@ -447,6 +473,7 @@ input.subscribe-button{
   border: none;
   border-radius: 4px;
   margin: 0 auto;
+  margin-bottom: 24px;
   display: block;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -471,6 +498,7 @@ input.subscribe-button{
   justify-content: center;
   align-items: center;
   margin-bottom: 8px;
+  border-radius: 4px;
 }
 .examples-list {
   display: flex;
@@ -487,6 +515,7 @@ input.subscribe-button{
 .team-card-text {
   background-color: var(--only-white);
   padding: 32px 16px;
+  border-radius: 0 0 4px 4px;
 }
 .team-card-h {
   font-size: 16px;
@@ -539,7 +568,7 @@ input.subscribe-button{
   margin-right: 24px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 0 0 4px 4px;
 }
 .li-card:last-child {
   margin-right: 0;
