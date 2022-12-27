@@ -429,6 +429,7 @@ input.subscribe-button{
   border: 1.25px solid var(--dark-color);
   border-radius: 2px;
   position: absolute;
+  align-items: center;
 }
 .checkbox-modal:checked +.checkbox-custom{
   background-color: #404bbf;
@@ -449,6 +450,8 @@ input.subscribe-button{
   color: var(--prime-color);
 }
 .checkbox-modal{
+  display: flex;
+  align-items: center;
   margin-right: 8px;
 }
 .form-field-checkbox {
