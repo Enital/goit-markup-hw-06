@@ -328,21 +328,23 @@ input.subscribe-button{
   font-size: 12px;
   line-height: 133%;
   letter-spacing: 0.04em;
+  padding:72px 24px 24px 24px;
 }
+
 .modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  border: none;
   background-color: var(--accent-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  margin: 24px 24px 24px 360px;
   padding: 0;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close:hover,
@@ -386,7 +388,6 @@ input.subscribe-button{
   display: block;
   width: 100%;
   position: relative;
-  /* margin-top: 4px; */
 }
 .modal-icon {
   position: absolute;
@@ -423,12 +424,16 @@ input.subscribe-button{
   border-color: var(--prime-color);
 }
 .checkbox-custom{
+  display: inline-block;
+  vertical-align: middle;
   width: 16px;
   height: 16px;
-  background-color: #fcfcfc;
   border: 1.25px solid var(--dark-color);
   border-radius: 2px;
-  position: absolute;
+  margin-right: 8px;
+}
+.checkbox-modal {
+  display: flex;
   align-items: center;
 }
 .checkbox-modal:checked +.checkbox-custom{
@@ -443,21 +448,29 @@ input.subscribe-button{
   line-height: 133%;
   letter-spacing: 0.04em;
   color: #757575;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
 }
 .modal-privacy{
   color: var(--prime-color);
-}
-.checkbox-modal{
-  display: flex;
-  align-items: center;
-  margin-right: 8px;
 }
 .form-field-checkbox {
   margin-bottom: 24px;
   display: flex;
   align-items: center;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .button-index {
@@ -472,7 +485,6 @@ input.subscribe-button{
   border: none;
   border-radius: 4px;
   margin: 0 auto;
-  margin-bottom: 24px;
   display: block;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
