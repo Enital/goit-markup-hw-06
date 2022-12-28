@@ -441,15 +441,13 @@ input.subscribe-button{
   border-color: transparent;
   background-image: url(../images/click.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center;
 }
 .modal-privacy-one{
   position: relative;
   line-height: 133%;
   letter-spacing: 0.04em;
   color: #757575;
-  /* display: flex;
-  align-items: center; */
 }
 .modal-privacy{
   color: var(--prime-color);
@@ -466,7 +464,6 @@ input.subscribe-button{
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
